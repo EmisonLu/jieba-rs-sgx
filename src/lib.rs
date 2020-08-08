@@ -66,13 +66,12 @@
 //! jieba-rs = { version = "0.6", features = ["tfidf", "textrank"] }
 //! ```
 //!
-#![feature(prelude_import)]
 #![no_std]
-#[prelude_import]
 use lazy_static::lazy_static;
-use ::std::prelude::v1::*;
+use std::prelude::v1::*;
 #[macro_use]
-extern crate std as std;
+extern crate sgx_tstd as std;
+extern crate sgx_libc as libc;
 
 use std::cmp::Ordering;
 use std::io::BufRead;

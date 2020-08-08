@@ -1,3 +1,9 @@
+#![no_std]
+use std::prelude::v1::*;
+#[macro_use]
+extern crate sgx_tstd as std;
+extern crate sgx_libc as libc;
+
 use c_fixed_string::CFixedStr;
 use jieba_rs::{Jieba, KeywordExtract, TextRank, TFIDF};
 use std::boxed::Box;

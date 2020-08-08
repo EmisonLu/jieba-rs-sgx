@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 #[macro_use]
 extern crate criterion;
 
